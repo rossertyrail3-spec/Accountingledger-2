@@ -1,18 +1,18 @@
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class transactions {
+public class Transactions {
     private LocalDate date;
     private LocalTime time;
-    private String Despriction;
-    private String Vendor;
+    private String despriction;
+    private String vendor;
     private double amount;
 
-    public transactions(LocalDate date, LocalTime time, String despriction, String vendor, double amount) {
+    public Transactions(LocalDate date, LocalTime time, String despriction, String vendor, double amount) {
         this.date = date;
         this.time = time;
-        Despriction = despriction;
-        Vendor = vendor;
+        despriction = despriction;
+        vendor = vendor;
         this.amount = amount;
     }
 
@@ -33,19 +33,19 @@ public class transactions {
     }
 
     public String getDespriction() {
-        return Despriction;
+        return despriction;
     }
 
     public void setDespriction(String despriction) {
-        Despriction = despriction;
+        despriction = despriction;
     }
 
     public String getVendor() {
-        return Vendor;
+        return vendor;
     }
 
     public void setVendor(String vendor) {
-        Vendor = vendor;
+        vendor = vendor;
     }
 
     public double getAmount() {
@@ -55,4 +55,19 @@ public class transactions {
     public void setAmount(double amount) {
         this.amount = amount;
     }
+
+    public void add(Transactions transaction) {
+    }
+
+    public Object getDescription() {
+        return null;
+    }
+
 }
+
+
+
+
+
+
+
